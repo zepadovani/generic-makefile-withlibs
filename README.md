@@ -1,37 +1,11 @@
-Generic Makefile
-================
+## README
 
-A generic makefile capable of building programs and static or shared libraries
+Basically I was having some problems implementing the 1.18 recipe of c++ cookbook (https://www.oreilly.com/library/view/c-cookbook/0596007612/ch01s19.html) and found Jamie Bullock's great template of a generic makefile (https://github.com/jamiebullock/generic-makefile). []
+Also, learning here to fork projects.. :/
 
-## Features
+### description:
+`make` in the main folder will run the Makefile of each library in the respective "static" and "shared" folders (inside lib folders) and in the main "src" folder.
 
-- Minimal configuration, should just work
-- Minimal dependencies, just GNU Make, uname (on Unix), gcc or g++ and ar
-- Build an application, static library or shared library
-- Include source files from multiple subdirectories
+`make install` will copy everything to the "binary" folders
 
-## Usage
-
-The Makefile is designed to be placed at the root of a project directory tree, and executed from this location by typing `make` from a command-line.
-
-In the default configuration, the Makefile is setup as follows:
-
-- The parent directory name is the program name
-- C files from the current directory only are compiled
-
-For example, if your files are `test/foo.c` `test/bar.c` then `foo.c` and `bar.c` will be compiled into a program called `test`.
-
-The default options can be overridden by adding a `Make.config` file parallel to the `Makefile`. For example the following `Make.config` will create a static library called libfoo.a by compiling all C++ files in directories `bar` and `baz`:
-
-> SUFFIX = .cpp  
-> DIRS = bar baz  
-> NAME = foo
-
-The `make debug` target will build a binary file suitable for debugging.
-
-## Credits
-
-This Makefile was influenced by [GenericMakefile](https://github.com/mbcrawfo/GenericMakefile) but is simpler, has fewer dependencies, uses explicit directory specification and supports static and shared libraries
-
-It was also influenced by this [GIST Makefile](https://gist.github.com/mkhl/159461) which gave the idea for library support
-
+`make clean` resets everything.
