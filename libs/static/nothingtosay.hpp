@@ -1,0 +1,6 @@
+#ifndef NOTHINGTOSAY_HPP_INCLUDED
+#define NOTHINGTOSAY_HPP_INCLUDED
+
+void nothingtosay( );
+
+#endif//  NOTHINGTOSAY_HPP_INCLUDED

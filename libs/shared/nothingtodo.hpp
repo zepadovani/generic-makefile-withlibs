@@ -1,0 +1,6 @@
+#ifndef NOTHINGTODO_HPP_INCLUDED
+#define NOTHINGTODO_HPP_INCLUDED
+
+void nothingtodo( );
+
+#endif // NOTHINGTODO_HPP_INCLUDED

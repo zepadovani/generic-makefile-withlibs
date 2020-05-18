@@ -1,0 +1,6 @@
+#ifndef BUTITSOKAY_HPP_INCLUDED
+#define BUTITSOKAY_HPP_INCLUDED
+
+void butitsokay( );
+
+#endif // BUTITSOKAY_HPP_INCLUDED
